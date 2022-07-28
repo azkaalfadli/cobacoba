@@ -1,0 +1,136 @@
+/* css reset */
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Style */
+
+body {
+    background-image: url(white-paper-texture.jpg);
+    background-color: #fff;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: #e0e0e0;
+}
+
+.header {
+    padding: 10px;
+}
+
+.header h1, ul {
+    padding-left: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+ul li {
+    display: inline-block;
+    margin-top: 5pxpx;
+    margin-right: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header a:hover {
+    color: chocolate;
+}
+
+.image {
+    height: 320px;
+    background-image: url(wallpp.jpg);
+    background-size: cover;
+    background-position: 0 -240px;
+}
+
+/* main */
+
+.main {
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main .penulis {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.main p {
+    font-size: 16px;
+}
+
+/* sidebar */
+
+.sidebar {
+    width: 300px;
+    float: right;
+}
+
+.sidebar img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+    font: 14px/18px times;
+}
+
+.footer {
+    background-color: #1b1919;
+}
+
+.copy {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* micro clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
